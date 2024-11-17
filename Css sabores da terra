@@ -1,0 +1,78 @@
+Css
+sabores da tera
+<!DOCTYPE html> 
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Terra</title>
+    <link rel="stylesheet" href="css/css_index.css">
+    <style>
+        .imagem-destaque {
+            width: 100%; /* Ajuste para que a imagem de destaque ocupe toda a largura disponível */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .prato-item img {
+            width: 100%; /* Imagens dos pratos em destaque menores */
+            height: auto; /* Mantém a proporção das imagens dos pratos */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Sabores da Terra">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="menu.html">Nossos Pratos</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="contacto.html">Contacte-Nos</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <label for="theme-select">Tema:</label>
+                <select id="theme-select">
+                    <option value="light">Claro</option>
+                    <option value="dark">Escuro</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="destaque">
+            <h1>Sabores da Terra</h1>
+            <p>Deixe-se envolver pelos sabores vibrantes e aromáticos que fazem parte da rica cultura moçambicana. Em cada prato, uma história, em cada ingrediente, um pedacinho da nossa tradição.</p>
+            <img src="images/frango_com_quiabo.jpg" alt="Frango com Quiabo" class="imagem-destaque">
+        </section>
+
+        <section class="pratos">
+            <h2>Pratos em Destaque</h2>
+            <p>Descubra duas iguarias imperdíveis que são a verdadeira essência da nossa culinária:</p>
+            <div class="grade-pratos">
+                <div class="prato-item">
+                    <img src="images/leitao_a_pururuca.jpg" alt="Leitão à Pururuca">
+                    <h3>Leitão à Pururuca</h3>
+                    <p>Um clássico moçambicano, este prato irresistível é preparado com pele crocante, temperos aromáticos e uma combinação de sabores que vai te deixar pedindo mais!</p>
+                </div>
+                <div class="prato-item">
+                    <img src="images/galinhada_com_pequi.jpg" alt="Galinhada com Pequi">
+                    <h3>Galinhada com Pequi</h3>
+                    <p>Uma explosão de sabores autênticos, com frango suculento e o toque especial do pequi, transformando cada garfada em uma experiência única e deliciosa.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Sabores da Terra - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/js_index.js"></script>
+</body>
+</html>
+
